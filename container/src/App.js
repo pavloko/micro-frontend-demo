@@ -1,5 +1,8 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom'
+
 import { mount as mountMarketingApp } from 'marketing/MarketingApp';
+import Header from './components/Header'
 
 export default function App() {
   const containerRef = React.useRef(null);
@@ -9,11 +12,9 @@ export default function App() {
   }, []);
 
   return (
-    <div>
-      <header>
-        <h1>Container App Updates!</h1>
-      </header>
+    <BrowserRouter>
+      <Header/>
       <div ref={containerRef}></div>
-    </div>
+    </BrowserRouter>
   );
 }
