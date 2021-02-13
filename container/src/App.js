@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div>
       <header>
-        <h1>Container App Updates.</h1>
+        <h1>Container App Updates!</h1>
       </header>
       <div ref={containerRef}></div>
     </div>
