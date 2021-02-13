@@ -19,8 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Build static assets
+      - name: NPM install
         run: npm install
+      - name: Build assets
         run: npm run build
 
       - name: Upload to S3
